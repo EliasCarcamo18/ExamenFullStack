@@ -1,4 +1,4 @@
-package main.java.cl.duoc.review.model;
+package cl.duoc.review.model;
 
 public enum ReviewStatus {
     ACTIVE,
