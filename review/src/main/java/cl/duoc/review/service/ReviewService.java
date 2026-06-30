@@ -131,7 +131,7 @@ public class ReviewService {
     private void validateDestination(Long destinationId) {
 
         if (destinationId == null || destinationId <= 0) {
-            throw new InvalidReviewException("El destino es inválido");
+            throw new InvalidReviewException("El destino es invalido");
         }
 
         DestinationResponseDTO destination = destinationClient.getDestinationById(destinationId);

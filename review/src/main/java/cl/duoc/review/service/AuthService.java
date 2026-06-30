@@ -10,12 +10,12 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AuthService {
 
-    private final LoginClient loginClient;
+    private final LoginClient loginClient ;
 
     public void validateAuthorization(String authorizationHeader) {
 
         if (authorizationHeader == null || authorizationHeader.isBlank()) {
-            throw new InvalidReviewException("El token de autorización es obligatorio");
+            throw new InvalidReviewException("El token de autorizacion es obligatorio");
         }
 
         if (!authorizationHeader.startsWith("Bearer ")) {
@@ -25,7 +25,7 @@ public class AuthService {
         TokenValidationResponseDTO response = loginClient.validateToken(authorizationHeader);
 
         if (response == null || response.getValid() == null || !response.getValid()) {
-            throw new InvalidReviewException("Token inválido o expirado");
+            throw new InvalidReviewException("Su token es invalido oa expirado");
         }
     }
 }
