@@ -1,7 +1,7 @@
 package cl.duoc.review.service;
 
 import org.springframework.stereotype.Service;
-import cl.duoc.review.config.LoginClient;
+import cl.duoc.review.client.LoginClient;
 import cl.duoc.review.Dto.TokenValidationResponseDTO;
 import cl.duoc.review.exception.InvalidReviewException;
 import lombok.RequiredArgsConstructor;

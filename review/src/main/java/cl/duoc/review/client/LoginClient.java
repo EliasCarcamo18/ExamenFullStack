@@ -1,4 +1,4 @@
-package cl.duoc.review.config;
+package cl.duoc.review.client;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
